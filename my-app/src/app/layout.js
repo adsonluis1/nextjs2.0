@@ -2,6 +2,9 @@ import { Inter } from "next/font/google";
 import StyledComponentsRegistry, { GlobalStyled } from "@/lib/registry";
 import Nav from "@/components/nav";
 
+
+
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -16,9 +19,11 @@ export default function RootLayout({ children }) {
         <title>OI</title>
       </head>
       <body>
-        <GlobalStyled />
-        <Nav />
-        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        
+          <GlobalStyled />
+          <Nav />
+          <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        
       </body>
     </html>
   );
