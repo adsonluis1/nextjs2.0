@@ -5,6 +5,7 @@ import CarrinhoItens from '@/components/carrinhoItens/page'
 
 const page =  async () => {  
   const itens = await useGetItensCar()
+  console.log(itens)
   return (
     <S.Section>
       <S.H1>Carrinho</S.H1>

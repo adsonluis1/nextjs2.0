@@ -6,7 +6,7 @@ import { useAddCar } from '@/hooks/useAddCar'
 const CardItens= ({produc}) => {
   const [quantidade, setQuatidade] = useState(1)
   let newCompra = {...produc, quantidade}
-  console.log(produc.img)
+  
   return (
     <S.divConteiner>
       <S.img src={produc.img} alt={produc.nome}/>
