@@ -1,6 +1,8 @@
+'use client'
+import { useContext } from 'react'
 import * as S from './styled'
 
-const page = () => {
+const page = () => {  
   return (
     <S.Section>
       <S.H1>Carrinho</S.H1>
