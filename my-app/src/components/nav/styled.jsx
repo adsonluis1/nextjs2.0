@@ -8,22 +8,17 @@ export const Nav = styled.nav `
     gap: 8px;
     padding: 8px;
     width: 100vw;
-`
 
-export const Link = styled.a`
+    & a {
+        color: white;
+        text-decoration: none;
+        padding: 8px;
+        border-radius: 8px;
+    }
 
-    color: white;
-    text-decoration: none;
-    padding: 8px;
-    border-radius: 8px;
-
-    &:hover{
+    & a:hover{
         background-color: rgb(80, 80, 80);
     }
-
-    &.active{
-        background-color: aqua;
-    }
-` 
+`
 
 

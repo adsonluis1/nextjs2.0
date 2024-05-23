@@ -1,3 +1,4 @@
+import Link from "next/link"
 import * as S from "./styled"
 
 const Nav = () => {
@@ -10,7 +11,7 @@ const Nav = () => {
     return (
     <S.Nav>
         {links.map((link)=>[
-            <S.Link key={link.nome} className={link.class} href={link.link}>{link.nome}</S.Link>
+          <Link key={link.nome} href={link.link}>{link.nome}</Link>
         ])}
     </S.Nav>
   )

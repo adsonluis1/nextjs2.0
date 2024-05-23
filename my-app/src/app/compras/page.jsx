@@ -1,11 +1,9 @@
 import CardItens from '@/components/cardItens/page'
 import * as S from './styled'
 import { useGetItens } from '@/hooks/useGetItens'
-import Page from '../carrinho/page'
-
 
 const page = async () => {
-    const itens = await useGetItens()
+  const itens = await useGetItens()
   return (
     <>
     <S.Section>
@@ -13,7 +11,6 @@ const page = async () => {
         <CardItens produc={item}/>
       ])}
     </S.Section>
-    <Page/>
     </>
   )
 }
