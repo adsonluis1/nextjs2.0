@@ -1,13 +1,12 @@
 'use client'
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import * as S from './styled'
-import { useAddCar } from '@/hooks/useAddCar'
-import { useAppContext } from '@/hooks/Context'
+import { Context} from '@/hooks/Context'
 
 
 const CardItens= ({produc}) => {
   const [quantidade, setQuatidade] = useState(1)
-  const {carrinho, setCarrinho} = useAppContext()
+  const {carrinho, setCarrinho} = useContext(Context)
   let newCompra = {...produc, quantidade}
   
 

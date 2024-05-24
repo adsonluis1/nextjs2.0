@@ -9,7 +9,4 @@ export const ContextProviber = ({children})=>{
     return <Context.Provider value={{carrinho, setCarrinho}}>{children}</Context.Provider>
 }
 
-export const useGetContext = ()=>{
-    const data = useContext(Context)
-    return data
-}
+// export const useGetContext = ()=>{useContext(Context)}

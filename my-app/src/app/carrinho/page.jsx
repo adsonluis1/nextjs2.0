@@ -1,4 +1,4 @@
-import CarrinhoItens from '@/components/carrinhoItens/page'
+import CarrinhoItens from '@/components/carrinhoItens/index.jsx'
 import * as S from './styled'
 
 

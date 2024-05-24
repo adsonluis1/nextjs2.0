@@ -1,14 +1,16 @@
-import { useGetContext } from '@/hooks/Context'
+import { Context, useGetContext } from '@/hooks/Context'
 import * as S from './styled'
+import { useContext } from 'react'
 
 const CarrinhoItens = () => {
-  const carrin = []
+  const {carrinho,setCarrinho} = useContext(Context)
+  console.log(carrinho)
   return (
     <>
     <S.H2>aaa</S.H2>
     {/* {carrinho.length == 0 && <S.H2>Carrinho vazio...</S.H2>} */}
-    {carrin &&
-      carrin.map((item)=>[
+    {carrinho &&
+      carrinho.map((item)=>[
           <S.DivContainer key={item.id}>
           <S.DivCompras>
             <S.Img src={item.img.src} alt={item.nome}/>
@@ -27,7 +29,7 @@ const CarrinhoItens = () => {
 }
 
 // export async function getStaticProps() {
-//   const {carrinho} = await useAppContext()
+//   const {carrinho,setCarrinho} = useContext(Context)
 //   return {props:{carrinho}}
 // }
 
